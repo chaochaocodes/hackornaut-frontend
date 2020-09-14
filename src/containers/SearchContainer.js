@@ -82,9 +82,11 @@ class SearchContainer extends Component {
 
                 <SearchList saveSearchResult={this.saveSearchResult} breaches={this.getSelectBreaches()}/>
                 </Grid>
-                <button onClick={() => this.showLessBreaches()}> ←</button>
-                 {this.state.start_index}-{parseInt(this.state.start_index+this.state.select_amount)}   
-                <button onClick={() => this.showMoreBreaches()}> →</button>
+                <Grid>
+                  <button onClick={() => this.showLessBreaches()}> ←</button>
+                  {this.state.start_index}-{parseInt(this.state.start_index+this.state.select_amount)}   
+                  <button onClick={() => this.showMoreBreaches()}> →</button>
+                </Grid>
         </div>
       }
 
